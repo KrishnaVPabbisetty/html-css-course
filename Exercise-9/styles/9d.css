@@ -1,0 +1,25 @@
+.install {
+  width: 360px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(33, 33, 33);
+}
+
+p {
+  font-family: Arial;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: rgb(160, 160, 160);
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Grid Practice</title>
+</head>
+
+<body>
+  <!--Grid is a layout which has rows and columns.-->
+  <div style="
+  display: grid;
+  grid-template-columns: 100px 100px;">
+    <div style="background-color: lightblue;">
+      div 1
+    </div>
+
+    <div style="background-color: lightpink;">
+      div 2
+      <p>text</p>
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 100px 200px;">
+    <div style="background-color: lightblue;">
+      100px
+    </div>
+
+    <div style="background-color: lightpink;">
+      100px
+    </div>
+
+    <div style="background-color: lightblue;">
+      200px
+    </div>
+
+    <!--Whenever it has more elements than columns, then it starts 
+    to wrap around and create new rows.-->
+    <div style="background-color: lightblue;">
+      100px
+    </div>
+  </div>
+
+  <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 1fr;">
+    <!--fr is free space it means it takes remaining amount of space on its grid-->
+    <div style="background-color: lightblue;">
+      100px
+    </div>
+
+    <div style="background-color: lightpink;">
+      1fr
+    </div>
+  </div>
+
+  <div style="
+          margin-top: 30px;
+          display: grid;
+          grid-template-columns: 100px 1fr 2fr;">
+    <!--It works like ratio 2nd element takes 1/3rd of remaining space and 3rd element takes 2/3rd of remaining space-->
+    <!--fr is free space it means it takes remaining amount of space on its grid-->
+    <div style="background-color: lightblue;">
+      100px
+    </div>
+
+    <div style="background-color: lightpink;">
+      1fr
+    </div>
+
+    <div style="background-color: lightblue ;">
+      2fr
+    </div>
+  </div>
+
+  <div style="
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 40px;">
+    <!--It works like ratio 2nd element takes 1/3rd of remaining space and 3rd element takes 2/3rd of remaining space-->
+    <!--fr is free space it means it takes remaining amount of space on its grid-->
+    <div style="background-color: lightblue; height: 200px;">
+      1fr
+    </div>
+
+    <div style="background-color: lightpink; height: 200px;">
+      1fr
+    </div>
+
+    <div style="background-color: lightblue; height: 200px;">
+      1fr
+    </div>
+    <div style="background-color: lightpink; height: 200px;">
+      1fr
+    </div>
+    
+    <div style="background-color: lightblue; height: 200px;">
+      1fr
+    </div>
+    
+    <div style="background-color: lightpink; height: 200px;">
+      1fr
+    </div>
+  </div>
+</body>
+
+</html>

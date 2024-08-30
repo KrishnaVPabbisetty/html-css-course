@@ -1,0 +1,74 @@
+.subscribe-button {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: opacity 0.15s;
+  /*transition takes two paramters. first one is what are you trying to transition and second one is time(after how many sec transition should happen)*/
+  vertical-align: top;
+  /*Previously all the browsers are text based that is why the alignment is done based on the text. If we use vertical-align it aligns based on the element and not text.*/
+}
+
+/*hover and active are psuedo classes*/
+/*opacity is used to fadeout element*/
+.subscribe-button:hover {
+  opacity: 0.7;
+}
+
+.subscribe-button:active {
+  opacity: 0.4;
+}
+
+.join-button {
+  background-color: white;
+  color: #065fd4;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-color: #065fd4;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: background-color 0.15s, color 0.15s;
+  /*We add transistion here and not in hover because hover class styles applies only when we hover onto that button. When we hover the button transition will get applied but when we come out of the button then transition will not apply(If we add it in hover class).*/
+}
+
+.join-button:hover {
+  background-color: #065fd4;
+  color: white;
+}
+
+.join-button:active {
+  opacity: 0.7;
+}
+
+.tweet-button {
+  background-color: #1d9bf0;
+  color: white;
+  border: none;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: box-shadow 0.15s;
+  vertical-align: top;
+}
+
+.tweet-button:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  /*rgba is opacity of color. how see through the color is.*/
+  /*Box shadow has four values first is horizontal position, second is vertical position, third is blurred and last one is what color of shadow you need.*/
+}
